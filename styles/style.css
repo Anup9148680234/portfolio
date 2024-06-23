@@ -107,10 +107,26 @@ body {
   }
 
 .socials__container{
-  display: flex;
-  gap: 10dvw;
-  gap: 10vw;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-row-gap: 10vw;
+  grid-column-gap:10vw;
 }
+
+
+@media (max-width:812px) {
+  .socials__container{
+    grid-template-columns: repeat(3, 2fr);
+  }
+}
+
+@media (max-width:500px) {
+  .socials__container{
+    grid-template-columns: repeat(2, 4fr);
+    margin-left: 12%;
+  }
+}
+
 
 .socials > svg{
   height: 100px;
