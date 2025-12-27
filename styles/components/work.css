@@ -1,7 +1,8 @@
 .work {
     text-align: center;
+
   }
-  
+
   .work__title {
     font-size: var(--size-2xl);
     color: var(--clr-light);
@@ -158,7 +159,7 @@
     }
   
     .work__project {
-      padding: 0 1rem;
+      padding:  2rem;
     }
   
     .work__project-title {
